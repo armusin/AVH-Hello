@@ -20,7 +20,7 @@
 #include "main.h"
 
 int main (void) {
-  stdio_init();                         // Initialize stdio
+  //stdio_init();                         // Initialize stdio
 
   app_main();                           // Execute Application main
 

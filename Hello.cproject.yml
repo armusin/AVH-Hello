@@ -7,26 +7,8 @@ project:
     - component: CMSIS:CORE
     - component: CMSIS:RTOS2:Keil RTX5&Source
     - component: CMSIS:OS Tick:SysTick
-    - component: CMSIS Driver:USART
     - component: Device:Startup&C Startup
     - component: CMSIS-Compiler:CORE
-    - component: CMSIS-Compiler:STDERR:Custom
-    - component: CMSIS-Compiler:STDOUT:Custom
-    - component: CMSIS-Compiler:STDIN:Custom
-
-    - component: Device:Native Driver:IO
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-      - +CS320
-
-    - component: Device:Native Driver:UART
-      for-context:
-      - +CS300
-      - +CS310
-      - +CS315
-      - +CS320
 
     - component: Device:Native Driver:SysCounter
       for-context:
@@ -67,6 +49,3 @@ project:
     - group: App
       files:
         - file: ./hello.c
-    - group: Board IO
-      files:
-        - file: ./Board_IO/retarget_stdio.c
