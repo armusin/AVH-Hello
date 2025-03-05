@@ -13,6 +13,7 @@ solution:
   # List the packs that define the device and/or board.
   packs:
     - pack: ARM::CMSIS
+    - pack: ARM::CMSIS-NN
     - pack: ARM::CMSIS-RTX
     - pack: ARM::V2M_MPS3_SSE_300_BSP # Corstone-300 (Cortex-M55)
     - pack: ARM::V2M_MPS3_SSE_310_BSP # SSE-310-MPS3_FVP

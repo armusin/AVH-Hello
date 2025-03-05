@@ -19,6 +19,7 @@
 
 #include <stdio.h>
 #include "main.h"
+#include "arm_nnfunctions.h"
 
 static int count = 0;
 
@@ -29,6 +30,19 @@ static void hello(void) {
   }
 }
 
+static void cmsis_nn_test(void) {
+  printf("%s\r\n", __func__);
+  // arm_max_pool_s16(0, 0, 0, 0, 0, 0, 0);
+  // arm_cmsis_nn_status arm_max_pool_s16(const cmsis_nn_context *ctx,
+  //   const cmsis_nn_pool_params *pool_params,
+  //   const cmsis_nn_dims *input_dims,
+  //   const int16_t *src,
+  //   const cmsis_nn_dims *filter_dims,
+  //   const cmsis_nn_dims *output_dims,
+  //   int16_t *dst)
+
+}
+
 int main (void) {
   //stdio_init();                         // Initialize stdio
 
@@ -36,5 +50,6 @@ int main (void) {
 
   // for (;;) {}
 
-  hello();
+  //hello();
+  cmsis_nn_test();
 }
