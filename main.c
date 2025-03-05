@@ -17,12 +17,24 @@
  * limitations under the License.
  *---------------------------------------------------------------------------*/
 
+#include <stdio.h>
 #include "main.h"
+
+static int count = 0;
+
+static void hello(void) {
+  while (count <= 100) {
+    printf("Hello World %d\r\n", count);
+    count++;
+  }
+}
 
 int main (void) {
   //stdio_init();                         // Initialize stdio
 
-  app_main();                           // Execute Application main
+  // app_main();                           // Execute Application main
 
-  for (;;) {}
+  // for (;;) {}
+
+  hello();
 }
